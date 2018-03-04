@@ -5,4 +5,5 @@ authors = ["pmosakowski <pmosakowski@users.noreply.github.com>"]
 
 [dependencies]
 conrod = { version = "*", features = ["glium"] }
+glium = "*"
 find_folder = "*"
