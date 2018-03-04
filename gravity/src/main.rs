@@ -1,4 +1,3 @@
-extern crate conrod;
 extern crate find_folder;
 
 mod gui;
@@ -6,7 +5,7 @@ mod gui;
 // use conrod::backend::glium::glium;
 // use conrod::backend::piston::{self,Window,WindowEvents,OpenGL};
 // use conrod::backend::piston::event::UpdateEvent;
-use gui::GliumWindow;
+use gui::{GliumWindow, ConrodGUI};
 
 fn main() {
     const WIDTH: u32 = 800;
@@ -15,6 +14,5 @@ fn main() {
 
     let window = GliumWindow::new(WIDTH, HEIGHT, &title);
 
-    // construct our `Ui`.
-    let mut ui = conrod::UiBuilder::new([WIDTH as f64, HEIGHT as f64]).build();
+    let gui = ConrodGUI::new(WIDTH, HEIGHT);
 }
