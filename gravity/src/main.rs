@@ -14,5 +14,5 @@ fn main() {
 
     let window = GliumWindow::new(WIDTH, HEIGHT, &title);
 
-    let gui = ConrodGUI::new(WIDTH, HEIGHT);
+    let gui = ConrodGUI::new(WIDTH, HEIGHT, window);
 }
